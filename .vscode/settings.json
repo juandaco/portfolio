@@ -1,6 +1,10 @@
 // Place your settings in this file to overwrite default and user settings.
 {
   "files.exclude": {
+    ".gitignore": true,
+    "README.md": true,
+    "yarn.lock": true,
+    "package.json": true,
     "node_modules/": true,
     "src/.sass-cache": true,
     "src/index.css*": true,
