@@ -21,3 +21,5 @@ yarn-error.log*
 
 # SASS instead of CSS
 src/index.css
+src/index.css.map
+src/.sass-cache/
