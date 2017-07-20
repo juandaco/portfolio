@@ -1,0 +1,62 @@
+$theme-dark: #011627;
+$theme-white: #fdfffc;
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.site-main {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: $theme-white;
+
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.title-container {
+  display: flex;
+
+  width: 100vw;
+  height: 300px;
+
+  color: $theme-white;
+  background-color: $theme-dark;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.site-title {
+  font-family: 'Shadows Into Light', cursive;
+  color: $theme-white;
+  font-size: 6em;
+  letter-spacing: 15px;
+  margin: 0;
+  // border-bottom: 3px solid lightseagreen;
+
+  #logo-s {
+    letter-spacing: 5px;
+    font-size: 1.3em;
+    line-height: 0;
+  }
+
+  #logo-4 {
+    letter-spacing: 17px;
+    font-size: 1.2em;
+    line-height: 0;
+  }
+}
+
+.logo {
+  z-index: 2;
+  transform: rotate(-12deg);
+  text-shadow: 3px 7px rgba(255, 255, 255, 0.3);
+}
