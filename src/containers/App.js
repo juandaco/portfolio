@@ -6,10 +6,20 @@ import Project from '../components/Project';
 class App extends Component {
   render() {
     const projectCards = this.props.projects.map(project => {
-      const { title, description, stack } = project;
+      const { 
+        title,
+        description,
+        icon,
+        link,
+        repo,
+        stack,
+       } = project;
       return <Project 
         title={title}
         description={description}
+        icon={icon}
+        link={link}
+        repo={repo}
         stack={stack}
        />;
     });
