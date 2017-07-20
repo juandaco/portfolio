@@ -1,6 +1,6 @@
 $theme-dark: #011627;
 $theme-white: #fdfffc;
-
+$theme-green: #17bebb;
 
 html,
 body {
@@ -21,11 +21,11 @@ body {
   justify-content: flex-start;
 }
 
-.title-container {
+.site-header {
   display: flex;
 
   width: 100vw;
-  height: 300px;
+  height: 350px;
 
   color: $theme-white;
   background-color: $theme-dark;
@@ -34,29 +34,57 @@ body {
   justify-content: center;
 }
 
+.title-container {
+  padding-bottom: 20px;
+  hr {
+    position: relative;
+    bottom: 30px;
+    left: 5px;
+
+    width: 107%;
+    height: 4px;
+    margin: 0;
+
+    transform: rotate(-11deg);
+
+    border: none;
+    border-radius: 2px;
+    background-color: $theme-green;
+    // box-shadow: 0 2px 20px 0px $theme-green;
+  }
+}
+
 .site-title {
   font-family: 'Shadows Into Light', cursive;
-  color: $theme-white;
-  font-size: 6em;
-  letter-spacing: 15px;
+  font-size: 6.5em;
+
+  position: relative;
+
   margin: 0;
-  // border-bottom: 3px solid lightseagreen;
+
+  letter-spacing: 15px;
+
+  color: $theme-white;
 
   #logo-s {
-    letter-spacing: 5px;
-    font-size: 1.3em;
+    font-size: 1.4em;
     line-height: 0;
+
+    letter-spacing: 5px;
   }
 
   #logo-4 {
-    letter-spacing: 17px;
     font-size: 1.2em;
     line-height: 0;
+
+    letter-spacing: 17px;
   }
 }
 
 .logo {
-  z-index: 2;
+  z-index: 10;
+
   transform: rotate(-12deg);
-  text-shadow: 3px 7px rgba(255, 255, 255, 0.3);
+
+  text-shadow: 0.07em 0.10em rgba(255, 255, 255, 0.2);
 }
