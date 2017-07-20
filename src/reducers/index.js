@@ -1,6 +1,4 @@
-const initState = {
-  showPanel: false,
-};
+import initState from './initState';
 
 function siteApp(state = initState, action) {
   switch (action.type) {
