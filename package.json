@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "concurrently \"react-scripts start\" \"yarn run scss-watch\"",
-    "build": "react-scripts build",
+    "build": "rm -rf docs && react-scripts build && mv build docs && rm docs/service-worker.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "scss-watch": "cd src/ && scss --watch index.scss:index.css"
