@@ -4,7 +4,6 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import './index.css';
 import App from './containers/App';
-import registerServiceWorker from './registerServiceWorker';
 import reducer from './reducers';
 
 const store = createStore(
@@ -18,4 +17,3 @@ render(
   </Provider>,
   document.getElementById('root'),
 );
-registerServiceWorker();
