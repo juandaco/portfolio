@@ -1,11 +1,19 @@
 $theme-dark: #011627;
 $theme-white: #fdfffc;
 $theme-green: #17bebb;
+$theme-red: #ed4d59;
 
 html,
 body {
   margin: 0;
   padding: 0;
+
+  color: $theme-dark;
+}
+
+a:link,
+a:visited {
+  color: $theme-green;
 }
 
 .site-main {
@@ -36,12 +44,15 @@ body {
 }
 
 #drawer-icon {
-  color: $theme-white;
+  font-size: 27px;
+
   position: absolute;
   top: 10px;
   left: 10px;
-  font-size: 27px;
+
   cursor: pointer;
+
+  color: $theme-white;
 }
 
 .title-container {
@@ -98,8 +109,71 @@ body {
   text-shadow: 0.07em 0.10em rgba(255, 255, 255, 0.2);
 }
 
+.projects-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 80vw;
+  height: 1100px;
+  margin-top: 50px;
+
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
 .project {
-  a > button > i {
-    margin-left: 7px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+
+  display: flex;
+  flex-direction: row;
+
+  width: 400px;
+  height: 180px;
+  margin: 20px auto;
+}
+
+.project-icon {
+  margin-top: 22px;
+  margin-right: 10px;
+}
+
+.project-content {
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  p {
+    line-height: 1.5;
+
+    margin-bottom: 15px;
+  }
+}
+
+.project-btn-container {
+  width: 79%;
+}
+
+.project-btn {
+  float: right;
+  button {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+
+    margin: 0 5px;
+    // border: 1px solid $theme-red;
+
+    cursor: pointer;
+
+    border-radius: 3px;
+    background-color: white;
+    i {
+      margin-left: 7px;
+    }
   }
 }

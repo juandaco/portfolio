@@ -2,9 +2,10 @@ const initState = {
   showPanel: false,
   projects: [
     {
-      title: 'Open Source for Good Directory',
-      description:
-        'Main contributor to freeCodeCamp\'s "Open Source for Good Directory".',
+      title: 'OSfG Directory',
+      description: `Main contributor to 
+      <a href="https://freecodecamp.org" target="_blank"> freeCodeCamp</a>'s
+         "Open Source for Good Directory".`,
       icon: 'fa-free-code-camp',
       link: 'https://freecodecamp.org/nonprofits',
       repo: 'https://github.com/freecodecamp/open-source-for-good-directory',
@@ -12,7 +13,7 @@ const initState = {
     },
     {
       title: 'Snapterest',
-      description: 'A pretty cool Pinterest clone with Twitter login.',
+      description: 'A pretty cool Pinterest clone with Twitter login. Built with the Mansory.js library',
       icon: 'fa-camera-retro',
       link: 'https://snapterest-fcc.herokuapp.com/',
       repo: 'https://github.com/juandaco/snapterest',
@@ -28,7 +29,7 @@ const initState = {
       techStack: ['react', 'redux', 'mongodb'],
     },
     {
-      title: 'Nightlife',
+      title: 'Nightlife!',
       description:
         'A social coordination app to explore the city at night. Powered by the Yelp API.',
       icon: 'fa-glass',
@@ -39,7 +40,7 @@ const initState = {
     {
       title: 'The Book Club',
       description:
-        'A book exchanging platform for trading used books among users. It works with the Google Books API.',
+        'A book exchanging platform for trading used books among readers. It works with the Google Books API.',
       icon: 'fa-book',
       link: 'https://thebookclub-fcc.herokuapp.com/',
       repo: 'https://github.com/juandaco/booktrading',

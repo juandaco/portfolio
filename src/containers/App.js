@@ -16,6 +16,7 @@ class App extends Component {
        } = project;
       return <Project 
         title={title}
+        key={title}
         description={description}
         icon={icon}
         link={link}
