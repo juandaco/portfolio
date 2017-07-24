@@ -13,13 +13,13 @@ const Project = ({ title, description, icon, link, repo, stack }) => {
         <a className="project-btn" href={repo} target="_blank">
           <button>
             Code
-            <i className="fa fa-code" />
+            <i className="fa fa-code project-btn-icon" />
           </button>
         </a>
         <a className="project-btn" href={link} target="_blank">
           <button>
             Project
-            <i className="fa fa-desktop" />
+            <i className="fa fa-desktop project-btn-icon" />
           </button>
         </a>
         </div>
