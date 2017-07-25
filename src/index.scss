@@ -1,7 +1,8 @@
 $theme-dark: #011627;
 $theme-white: #fdfffc;
 $theme-green: #17bebb;
-$theme-red: #ed4d59;
+// $theme-red: #ed4d59;
+$theme-red: #ff6978;
 
 html,
 body {
@@ -118,10 +119,10 @@ a:visited {
   display: flex;
   flex-direction: row;
 
-  width: 75vw;
-  height: 1100px;
+  max-width: 950px;
   margin-top: 50px;
   margin-bottom: 100px;
+  padding: 0 10px;
 
   align-items: center;
   flex-wrap: wrap;
@@ -135,10 +136,10 @@ a:visited {
   display: flex;
   flex-direction: row;
 
-  width: 400px;
-  min-width: 400px;
+  width: 410px;
   height: 180px;
-  margin: 20px auto;
+  margin: 30px auto;
+  padding: 0 10px;
 }
 
 .project-icon {
@@ -149,12 +150,13 @@ a:visited {
 .project-content {
   h3 {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.7em;
 
     height: 30px;
     margin-bottom: 10px;
   }
   p {
+    font-size: 1.1em;
     line-height: 1.6;
 
     margin-bottom: 15px;
@@ -171,10 +173,7 @@ a:visited {
 
   :hover {
     margin: 0 4px;
-
     border: 2px solid $theme-green;
-    // box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-    // box-shadow: 1px 1px 1px rgba($theme-dark, 0.5);
   }
 
   button {
