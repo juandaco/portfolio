@@ -20,7 +20,7 @@ const initState = {
       <a href="https://co.pinterest.com/categories/popular" target="_blank">
       Pinterest
       </a>
-        clone with Twitter login, built with
+        clone with Twitter authentication, built with
       <a href="https://masonry.desandro.com/" target="_blank">
         Mansory.js
       </a>
