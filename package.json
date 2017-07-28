@@ -2,7 +2,7 @@
   "name": "portfolio-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://juandaco.github.io/portfolio-site",
+  "homepage": "https://juandaco.github.io/portfolio",
   "dependencies": {
     "concurrently": "^3.5.0",
     "prop-types": "^15.5.10",
