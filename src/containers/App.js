@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Title from '../components/Title';
 import Project from '../components/Project';
+import NavBar from '../components/NavBar';
 
 class App extends Component {
   render() {
@@ -22,6 +23,8 @@ class App extends Component {
     return (
       <div className="site-main">
         <div className="site-header">
+          {/* <i id="drawer-icon" className="fa fa-bars" aria-hidden="true" />  */}
+          <NavBar />
           <a
             href="https://github.com/juandaco"
             target="_blank"
@@ -30,7 +33,6 @@ class App extends Component {
           >
             <Title />
           </a>
-          {/* <i id="drawer-icon" className="fa fa-bars" aria-hidden="true" /> */}
         </div>
         <div className="projects-container">
           {projectCards}
