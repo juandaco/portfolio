@@ -1,25 +1,12 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import Title from '../components/Title';
-import Project from '../components/Project';
+
 import NavBar from '../components/NavBar';
+import Title from '../components/Title';
+import Intro from '../components/Intro';
+import Projects from './Projects';
 
 class App extends Component {
   render() {
-    const projectCards = this.props.projects.map(project => {
-      const { title, description, icon, link, repo, stack } = project;
-      return (
-        <Project
-          title={title}
-          key={title}
-          description={description}
-          icon={icon}
-          link={link}
-          repo={repo}
-          stack={stack}
-        />
-      );
-    });
     return (
       <div className="site-main">
         <div className="site-header">
@@ -34,15 +21,11 @@ class App extends Component {
             <Title />
           </a>
         </div>
-        <div className="projects-container">
-          {projectCards}
-        </div>
+        <Intro />
+        <Projects />
       </div>
     );
   }
 }
-const mapStateToProps = state => ({
-  projects: state.projects,
-});
 
-export default connect(mapStateToProps, null)(App);
+export default App;

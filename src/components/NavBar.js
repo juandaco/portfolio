@@ -11,13 +11,18 @@ const scrollToElement = className => {
   );
 };
 
+const mailTo = () => {
+  const link = 'mailto:juandacorias@gmail.com?subject=Synt4rt Portfolio';
+  window.open(link, 'Mail');
+};
+
 const NavBar = () =>
   <nav className="site-menu">
     <ul>
       <li className="menu-item">
         <a
-          href="#projects-container"
-          onClick={() => scrollToElement('projects-container')}
+          href="#projects"
+          onClick={() => scrollToElement('projects')}
         >
           Projects
         </a>
@@ -26,7 +31,12 @@ const NavBar = () =>
         <a>About</a>
       </li>
       <li className="menu-item">
-        <a>Contact</a>
+        <a
+          href="#contact"
+          onClick={mailTo}
+        >
+          Contact
+        </a>
       </li>
     </ul>
   </nav>;
