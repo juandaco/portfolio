@@ -20,21 +20,17 @@ const NavBar = () =>
   <nav className="site-menu">
     <ul>
       <li className="menu-item">
-        <a
-          href="#projects"
-          onClick={() => scrollToElement('projects')}
-        >
+        <a href="#about" onClick={() => scrollToElement('curriculum')}>
+          About
+        </a>
+      </li>
+      <li className="menu-item">
+        <a href="#projects" onClick={() => scrollToElement('projects')}>
           Projects
         </a>
       </li>
       <li className="menu-item">
-        <a>About</a>
-      </li>
-      <li className="menu-item">
-        <a
-          href="#contact"
-          onClick={mailTo}
-        >
+        <a href="#contact" onClick={mailTo}>
           Contact
         </a>
       </li>

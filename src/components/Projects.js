@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import ProjectCard from '../components/ProjectCard';
+import ProjectCard from './ProjectCard';
 
 const Projects = ({ projects }) => {
   const projectCards = projects.map(project => {
